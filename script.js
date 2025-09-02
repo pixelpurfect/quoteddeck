@@ -11,10 +11,15 @@ const newQuoteBtn = document.getElementById("new-quote");
 const themeBtn = document.getElementById("toggle-theme");
 
 newQuoteBtn.addEventListener("click", () => {
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-  quoteBox.textContent = quotes[randomIndex];
+  quoteBox.style.opacity = 0;
+  setTimeout(() => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteBox.textContent = `"${quotes[randomIndex]}"`;
+    quoteBox.style.opacity = 1;
+  }, 300);
 });
 
 themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+
