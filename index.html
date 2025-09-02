@@ -4,18 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QuoteDeck</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>QuoteDeck</h1>
-    <div id="quote-box">
-      <p id="quote">Click the button to get a quote.</p>
+  <div class="wrapper">
+    <div class="card">
+      <h1>QuoteDeck</h1>
+      <p id="quote">"Click the button to get a quote."</p>
+      <div class="buttons">
+        <button id="new-quote">🎲 New Quote</button>
+        <button id="toggle-theme">🌓 Toggle Theme</button>
+      </div>
     </div>
-    <button id="new-quote">New Quote</button>
-    <button id="toggle-theme">Toggle Theme</button>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
+
